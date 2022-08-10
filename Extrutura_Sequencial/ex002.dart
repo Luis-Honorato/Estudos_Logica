@@ -20,6 +20,6 @@ void main(){
   double metro_quadrado = comprimento * largura;
   double valor_terreno = metro_quadrado * valor_metro;
 
-  print('A área do terreno é de ${metro_quadrado}0m² e o valor é R${''} ${valor_terreno}0');
+  print('A área do terreno é de ${metro_quadrado.toStringAsFixed(2)}m² e o valor é R${''} ${valor_terreno.toStringAsFixed(2)}');
 
 }
