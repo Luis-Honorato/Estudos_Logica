@@ -22,5 +22,5 @@ void main(){
 
   double media = (idade1 + idade2) / 2;
 
-  print('A média entre as idades de $nome1 e $nome2 é $media');
+  print('A média entre as idades de $nome1 e $nome2 é $media anos');
 }
