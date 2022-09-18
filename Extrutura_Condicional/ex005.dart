@@ -17,7 +17,7 @@ void main(List<String> args) {
 
   double valor_total = preco * qtd;
   double troco = valor_total - dinheiro_recebido;
-  if (troco < 0) {
-    print('Troco = R\$ ${troco * (-1)}');
-  }
+
+  troco <0 ? print('Troco = R\$ ${troco * (-1)}') :  print('Valor insuficientem, faltam R\$ $troco reais');
+
 }
