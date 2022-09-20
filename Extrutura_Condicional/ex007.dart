@@ -12,17 +12,17 @@ void main(List<String> args) {
   print('Lançamento 3: ');
   double dist3 = double.parse(stdin.readLineSync()!);
 
-  if (dist1 < dist2 && dist1 < dist3) {
+  if (dist1 < dist2 && dist1 > dist3) {
     print('Maior Lançamento = $dist1');
-  } else if (dist2 < dist1 && dist2 < dist3) {
+  } else if (dist2 > dist3) {
     print('Maior Lançamento = $dist2');
-  } else if (dist3 < dist2 && dist3 < dist1) {
+  } else if (dist3 < dist2 && dist3 > dist1) {
     print('Maior Lançamento = $dist3');
-  } else if (dist1 == dist2 && dist1 < dist3) {
+  } else if (dist1 == dist2 && dist1 > dist3) {
     print('Maior Lançamento = $dist1');
-  } else if (dist2 == dist3 && dist2 < dist1) {
+  } else if (dist2 == dist3 && dist2 > dist1) {
     print('Maior Lançamento = $dist2');
-  } else if (dist3 == dist1 && dist3 < dist2) {
+  } else if (dist3 == dist1 && dist3 > dist2) {
     print('Maior Lançamento = $dist3');
   }
 }
