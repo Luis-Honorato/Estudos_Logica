@@ -6,12 +6,18 @@
 import 'dart:io';
 
 void main(List<String> args) {
+  double soma = 0;
+  double counter = 0;
+
   print('Digite as Idades');
   int dado = int.parse(stdin.readLineSync()!);
 
   while (dado > -1) {
+    soma += dado;
+    counter++;
     dado = int.parse(stdin.readLineSync()!);
   }
-
-  print('IMPOSSÍVEL CALCULAR');
+  counter == 0
+      ? print('IMPOSSÍVEL CALCULAR')
+      : print('MÈDIA = ${soma / counter}');
 }
